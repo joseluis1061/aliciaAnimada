@@ -1,0 +1,15 @@
+{
+  "name": "alicienanimaciones",
+  "version": "1.0.0",
+  "description": "Animaciones y transiciones usando CSS para la tematica de alicai en el pais de las maravillas",
+  "main": "src/indes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Css",
+    "animations"
+  ],
+  "author": "JOSE LUIS ZUÑIGA <joseluis836@hotmail.com>",
+  "license": "MIT"
+}
