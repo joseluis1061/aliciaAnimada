@@ -1,0 +1,51 @@
+/* Color de un link que no se ha visitado */
+a:link{
+    color: hotpink;
+}
+/* Color de un link que ya se visito */
+a:visited{
+    color: darksalmon;
+}
+/* Cambio al pasar el mouse por el elemento */
+a:hover{
+    color: aqua;
+}
+Cambiar el color a todos los elementos que no sean de una clase
+p:not(.maravillas){
+    color: brown;
+}
+/* Dar estilos al primer hijo */
+.container div:nth-child(1){
+    color: lightskyblue;
+}
+/* Agregar contenido antes de un elemento */
+.uno::after{
+    content: " UNO";
+}
+/* Agregar contenido después de un elemento*/
+.dos::before{
+    content:"DOS ";
+}
+
+/*Sesion 5*/
+.sesion5{
+    margin: 25px 0;
+    padding: 25px;
+    border: 1px solid green;
+}
+.sesion5 .shadow{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 50%;
+}
+.sesion5 .circle{
+    width: 100px;
+    height: 100px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+    border-radius: 50%;
+}
+.sesion5 .circle:hover{
+    transform: translate(20px, 20px);
+}
