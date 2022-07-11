@@ -49,3 +49,128 @@ p:not(.maravillas){
 .sesion5 .circle:hover{
     transform: translate(20px, 20px);
 }
+
+/*Sección 6*/
+.seccion6-scale{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.cuadrado-scale{
+    width: 100px;
+    height: 100px;
+    background: rgb(131,58,180);
+    border-radius: 15px;
+}
+.cuadrado-scale:hover{
+    transform: scale(150%);
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.seccion6-skew{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.cuadrado-skew{
+    width: 100px;
+    height: 100px;
+    background: rgb(58, 180, 70);
+    border-radius: 15px;
+}
+.cuadrado-skew:hover{
+    transform: skewY(20deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.seccion6-rotate{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.cuadrado-rotate{
+    width: 100px;
+    height: 100px;
+    background: rgb(72, 58, 180);
+    border-radius: 15px;
+}
+.cuadrado-rotate:hover{
+    transform: rotate(20deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.seccion6-matrix{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.cuadrado-matrix{
+    width: 100px;
+    height: 100px;
+    background: rgb(172, 180, 58);
+    border-radius: 15px;
+}
+.cuadrado-matrix:hover{
+    transform: matrix(1, 2, -1, 1, 80, 80);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+
+.seccion7-rotate{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.seccion7-rotate .cuadrado-rotate{
+    width: 100px;
+    height: 100px;
+    background: rgb(58, 170, 180);
+    border-radius: 15px;
+    transform-origin: top right;
+}
+.seccion7-rotate .cuadrado-rotate:hover{    
+    transform: rotate(20deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+
+.seccion8-perspective{
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 94, 89);
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid brown;
+    /* Perspectiva */
+    perspective: 100px;
+}
+.cuadrado-perspective{    
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(58, 180, 62);
+    opacity: 0.5;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.cuadrado-perspective:hover{
+    /*Transform-style*/
+    transform-style: preserve-3d;
+    transform: rotateX(50deg);
+}

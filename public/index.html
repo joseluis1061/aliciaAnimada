@@ -1,30 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AliciaInAnimationLand</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AliciaInAnimationLand</title>
 
-    <link rel="stylesheet" href="../src/styles/main.css">
+	<link rel="stylesheet" href="../src/styles/main.css">
 </head>
 <body>
-    <section class="sesion4">
-        <a href="#">Alicia</a>
-        <p>En el</p>
-        <p class="maravillas">maravillas</p>
-        <div class="container">
-            <div class="uno">1</div>
-            <div class="dos">2</div>
-            <div class="tres">3</div>
-        </div>
-    </section>
+	<section class="sesion4">
+		<a href="#">Alicia</a>
+		<p>En el</p>
+		<p class="maravillas">maravillas</p>
+		<div class="container">
+			<div class="uno">1</div>
+			<div class="dos">2</div>
+			<div class="tres">3</div>
+		</div>
+	</section>
 
-    <section class="sesion5">
-        <div class="shadow">
-            <div class="circle"></div>
-        </div>
-    </section>
+	<section class="sesion5">
+    <h2>Transform : Translate</h2>
+		<p>
+			En este ejemplo tienes una animación basada
+			en  transformaciones y traslaciones. 
+		</p>
+    <p>
+      La transformación indica el efecto que se aplicará
+    </p>
+    <p>
+      Y traslete es el valor que en este caso indica cuantas
+      posiciones debemos movernos en los eje X e Y.
+    </p>
+    <p>
+      transform: translate(20px, 20px);
+    </p>
+		<div class="shadow">
+			<div class="circle"></div>
+		</div>
+	</section>
+
+  <section class="seccion6">
+    <h3>Transform rotate, scale, skew y matrix</h3>
+    <p>
+      Los siguientes efectos pueden recibir varias propiedades
+      en paralelo para lograr efectos mas alla del movimiento
+      recto.
+    </p>
+    <p>
+      scale: Cambia el tamaño del objeto => transform: scale(150%);
+    </p>
+    <div class="seccion6-scale">
+      <div class="cuadrado-scale">
+      </div>
+    </div>
+    <p>
+      skew: Desplazamientos en una dirección mas que en otra,
+      muy util para los efectos de puerta o una imagen en diagonal.
     
+    </p>
+    <p>
+      Por defecto el efecto se aplica en el eje X pero podemos agregar
+      el eje X o Y si deseamos indicar la rotación.
+      transform: skewY(20deg);
+    </p>
+    <div class="seccion6-skew">
+      <div class="cuadrado-skew">
+      </div>
+    </div>
+    <p>
+      rotate: Rotar un objeto ciertos grados
+      <div class="seccion6-rotate">
+        <div class="cuadrado-rotate">
+        </div>
+      </div>
+      <p>
+    </p>
+    <p>
+      matrix: Este efecto es una combinación de scale y sckew
+      Los objetos se mueven similar a una puerta y cambian su tamaño.
+    </p>
+    <div class="seccion6-matrix">
+      <div class="cuadrado-matrix">
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion7">
+    <h2>Transform Origin</h2>
+    <p>Ayuda a redefinir el punto de rotación del objeto. Por
+      defecto se define su centro como eje de rotación.
+    </p>
+    <p>
+      transform-origin: top right;
+    </p>
+    <p>
+      El origen debe declararse antes del disparador del evento.
+    </p>
+    <div class="seccion7-rotate">
+      <div class="cuadrado-rotate">
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion8">
+    <h2>Transform style y perspective</h2>
+    <p>
+      Es el primer acercamiento a los efectos en 3D.
+    </p>
+    <p>
+      Esta propiedad es similar a ver una imagen desde otra
+      posición. El efecto de perspectiva inicia dandole una
+      profundidad al elemento contenedor. Podemos decir que
+      tendra profundidad en el momento de aplicar el efecto.
+    </p>
+    <a href="https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPGRpdiBjbGFzcz0idHJhbnNmb3JtM0QiPlNlw7HDoWxhbWU8L2Rpdj4NCjwvZGl2Pg0KDQo=%7CZGl2ew0KICBtYXJnaW46IDVyZW07DQogIHdpZHRoOiAyMDBweDsNCiAgaGVpZ2h0OiAyMDBweDsNCn0NCg0KLyogRWxlbWVudG8gcGFkcmUgKi8NCi5jb250YWluZXJ7DQogIGRpc3BsYXk6IGdyaWQ7DQogIHBsYWNlLWNvbnRlbnQ6IGNlbnRlcjsNCiAgcG9zaXRpb246IGFic29sdXRlOw0KICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5Ow0KICBib3JkZXI6IDFweCBzb2xpZCB0cmFuc3BhcmVudDsNCiAgLyogUGVyc3BlY3RpdmEgKi8NCiAgcGVyc3BlY3RpdmU6IDEwMHB4Ow0KfQ0KDQovKiBFbGVtZW50byBoaWpvICovDQoudHJhbnNmb3JtM0R7DQogIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrOw0KICBiYWNrZ3JvdW5kLWNvbG9yOiBza3libHVlOw0KICBmb250LXNpemU6IDJyZW07DQogIGRpc3BsYXk6IGdyaWQ7DQogIHBsYWNlLWNvbnRlbnQ6IGNlbnRlcjsNCiAgY3Vyc29yOiBwb2ludGVyOw0KDQogIC8qVHJhbnNmb3JtLXN0eWxlKi8NCiAgdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDsNCg0KfQ0KDQovKiBUcmFuc2Zvcm1hY2lvbmVzICovDQoudHJhbnNmb3JtM0Q6aG92ZXIgew0KICB0cmFuc2Zvcm06IHJvdGF0ZVgoMTVkZWcpDQp9%7C">
+      Ejemplo
+    </a>
+    <p>
+      Es similar a ver una ventana que se abre desde uno de 
+      sus bordes
+    </p>
+    <p>
+      El origen debe declararse antes del disparador del evento.
+    </p>
+    <p>
+      Pasos:
+    </p>
+    <ul>
+      <li>Crear un contenedor y un hijo</li>
+      <li>El contenedor debe tener la propiedad position relative</li>
+      <li>El contenedor define cual es su profundidad con perspective</li>
+      <li>El hijo debe definirse como position absolute</li>
+      <li>
+        En el hijo en el disparador definimos transform-style: preserve-3d;
+        para indicar que se movera en un movimiento 3D.
+      </li>
+      <li>
+        Despues debemos definir cual es el movimiento que ejecutara
+      </li>
+      <li>
+        En este ejemplo: transform: rotateX(50deg);
+      </li>
+    </ul>
+
+    <div class="seccion8-perspective">
+      <div class="cuadrado-perspective">
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion9">
+    <h2>Backface visibility</h2>
+    <p>
+      Este efecto lo usamos para mostrar una imagen o una card
+      que al disparar un efecto gire y veamos la información
+      que esta en la cara posterior.
+    </p>
+  </section>
+	
 </body>
 </html>
