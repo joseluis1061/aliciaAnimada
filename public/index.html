@@ -158,6 +158,47 @@
       que al disparar un efecto gire y veamos la información
       que esta en la cara posterior.
     </p>
+    <p>
+      Requiere minimo de un contendor y dos hijos que seran
+      las caras de nuestra card.
+    </p>
+    <ul>
+      <li>
+        La card o contenedor debe tener position: relative; y
+        transform-style: preserve-3d;
+      </li>
+      <li>
+        Los dos hijos deben tener la propiedad backface-visibility: hidden;
+        para ocultar la cara al rotar
+      </li>
+      <li>
+        El efecto de rotar se aplica sobre el contenedor
+      </li>
+      <li>
+        .seccion9-card:hover{
+          transform: rotateX(180deg);
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in;
+      }
+      </li>
+      <li>
+        Y luego se define sobre el elemento hijo de la cara oculta
+      </li>
+      <li>
+        .face.back{
+          background-color: rgb(205, 255, 219);
+          transform: rotateX(180deg);
+        }
+      </li>
+      <li>
+        De esta manera rotan en direcciones opuestas para crear ele efecto
+      </li>
+    </ul>
+
+    <div class="seccion9-card">
+      <div class="face front"></div>
+      <div class="face back"></div>
+    </div>
   </section>
 	
 </body>
